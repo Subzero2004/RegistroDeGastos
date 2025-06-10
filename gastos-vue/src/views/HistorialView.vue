@@ -18,6 +18,7 @@ cargarDatosApi()
 
 <template>
   <div class="container-historial">
+    <router-link :to="'/'" class="button-historial">Formulario</router-link>
     <h1 class="title">History</h1>
     <table class="table-container">
       <thead>
