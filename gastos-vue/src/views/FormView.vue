@@ -42,7 +42,7 @@ const enviarDatos = async () => {
     }
 
     if (datosGasto.value.fecha == '' || new Date(datosGasto.value.fecha) > new Date()) {
-      ErrorFecha.value = 'La fecha no debe ser vacia y no debe ser futura'
+      ErrorFecha.value = 'La fecha no debe ser vacia y no debe ser futura, tampoco debe ser mayor a la fecha actual.'
     } else {
       ErrorFecha.value = ''
     }
